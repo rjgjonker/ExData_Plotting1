@@ -32,7 +32,8 @@ plot4 <- function(datafile = "../household_power_consumption.txt") {
 		   col = c("black", "red", "blue"), lwd=1, bty = "n")
 
 	# Fourth plot	
-	plot(df$DateTime, df$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power")
+	plot(df$DateTime, df$Global_reactive_power, type = "l", xlab = "datetime",
+		 ylab = "Global_reactive_power")
 	
 	# Close the device (and write the file)
 	dev.off()
